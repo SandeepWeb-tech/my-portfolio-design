@@ -16,6 +16,7 @@ function Contact() {
         bgcolor: "#111",
         textAlign: "center",
       }}
+      id='contact'
     >
       <Container maxWidth="md">
         <Typography variant="h3" fontWeight="bold" mb={3}>
