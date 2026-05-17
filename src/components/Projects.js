@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import vindra1 from '../assets/vindra1.png';
+import vindra2 from '../assets/vindra2.png';
+import vindra3 from '../assets/vindra3.png';
+
 
 import {
   Box,
@@ -14,10 +18,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const projects = [
   {
     title: "Vindra Beauty",
-    code: "#",
+    code: "https://github.com/SandeepWeb-tech/vindra-beauty-ecommerce",
     images: [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200",
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200",
+      vindra1,
+      vindra2,
+      vindra3
     ],
   },
 
@@ -27,24 +32,6 @@ const projects = [
     images: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200",
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
-    ],
-  },
-
-  {
-    title: "Admin Dashboard",
-    code: "#",
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
-    ],
-  },
-
-  {
-    title: "Ecommerce Store",
-    code: "#",
-    images: [
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200",
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200",
     ],
   },
 ];
@@ -73,6 +60,7 @@ function ProjectCard({ project }) {
         borderRadius: "30px",
         overflow: "hidden",
       }}
+      id='projects'
     >
       {/* IMAGES */}
       {project.images.map((img, i) => (

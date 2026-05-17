@@ -20,6 +20,10 @@ const topSkills = [
   { name: "Material UI", value: 94 },
   { name: "Redux", value: 88 },
   { name: "TypeScript", value: 85 },
+  { name: "CSS", value: 95 },
+  { name: "HTML", value: 95 },
+  { name: "Zustand", value: 85 },
+
 ];
 
 const otherSkills = [
@@ -27,10 +31,17 @@ const otherSkills = [
   "MongoDB",
   "Git & GitHub",
   "REST API",
-  "Firebase",
+  "Storybook",
   "Responsive Design",
   "Tailwind CSS",
   "UI/UX",
+  "Agile/Scrum",
+  "Axios",
+  "CI/CD",
+  "Micro Frontend",
+  "Jest",
+  "Express.js",
+
 ];
 
 function Skills() {
@@ -41,6 +52,7 @@ function Skills() {
         background: "#070707",
         color: "white",
       }}
+      id='skills'
     >
       <Container maxWidth="lg">
         {/* SMALL TITLE */}
@@ -201,7 +213,7 @@ function Skills() {
                     background: "#111",
                     borderRadius: "18px",
                     textAlign: "center",
-                    py: 3,
+                    p: 3,
                     border: "1px solid rgba(255,255,255,0.08)",
                     transition: "0.3s",
 

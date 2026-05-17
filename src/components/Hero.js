@@ -17,6 +17,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import resume from "../assets/Sandeep_Resume.pdf";
 
 function Hero() {
   return (
@@ -80,8 +81,8 @@ function Hero() {
               mb: 5,
             }}
           >
-            I build premium responsive websites and modern web experiences
-            using React.js, Material UI, and modern frontend technologies.
+            I build premium responsive websites and modern web experiences using
+            React.js, Material UI, and modern frontend technologies.
           </Typography>
 
           <Stack direction="row" spacing={3}>
@@ -105,12 +106,20 @@ function Hero() {
 
             <Button
               variant="outlined"
+              component="a"
+              href={resume}
+              download="Sandeep_Resume.pdf"
               sx={{
                 borderColor: "#555",
                 color: "white",
                 px: 4,
                 py: 1.7,
                 borderRadius: "14px",
+
+                "&:hover": {
+                  borderColor: "#ff2e88",
+                  color: "#ff2e88",
+                },
               }}
             >
               Download CV
@@ -143,8 +152,7 @@ function Hero() {
                 md: 520,
               },
               borderRadius: "40px",
-              background:
-                "linear-gradient(180deg,#ff2e88 0%, #7c3aed 100%)",
+              background: "linear-gradient(180deg,#ff2e88 0%, #7c3aed 100%)",
               p: "3px",
               boxShadow: "0px 0px 40px rgba(255,46,136,0.3)",
             }}

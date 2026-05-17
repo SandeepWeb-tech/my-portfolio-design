@@ -39,7 +39,7 @@ function Header() {
             letterSpacing: 1,
           }}
         >
-          Sandeep
+          Modern Web Developer
           <span style={{ color: "#ff2e88" }}>.</span>
         </Typography>
 
@@ -52,10 +52,9 @@ function Header() {
             gap: 4,
           }}
         >
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Skills</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Contact</Button>
+          <Button color="inherit" href="#skills">Skills</Button>
+          <Button color="inherit" href="#projects">Projects</Button>
+          <Button color="inherit" href="#contact">Contact</Button>
         </Box>
 
         <Button
